@@ -111,6 +111,13 @@ class ViewController: UIViewController {
         if (timer != nil){
             timer.invalidate()
             timer = nil
+            
+            //enable Left&Right Button
+            LeftButton.isEnabled = true
+            RightButton.isEnabled = true
+            
+            //change button name to "Play"
+            playButton.setTitle("Play", for: .normal)
         }
         performSegue(withIdentifier: "toExpandedView", sender: nil)
     }
