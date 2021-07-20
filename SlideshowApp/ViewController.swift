@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     
   
     //Declared image index
-    var index_image:Int = 0
+    var index_image = 0
     
     //Declared timer for slideshow
     var timer: Timer!
@@ -32,8 +32,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //set the image
+        imageView.image = imageArray[index_image]
     }
 
+    
+    
     @IBAction func playButton(_ sender: Any) {
     //when playing
     if(timer == nil){
